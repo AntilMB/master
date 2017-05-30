@@ -9,8 +9,9 @@
 \usepackage{url}
 \usepackage{courier}
 \usepackage{array}
-\usepackage{enumitem}
+%\usepackage{enumitem}
 \usepackage{paralist}
+\usepackage[inline]{enumitem}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{hyperref}
 \hypersetup{
@@ -20,6 +21,8 @@
 
 \newcommand{\ti}[1]{\foreignlanguage{English}{\textit{#1}}}
 \newcommand{\fl}[1]{\foreignlanguage{English}{#1}}
+\setlist[enumerate,1]{label=\textit{\alph*)}}
+
 
 
 \usepackage[a4paper, mag=1000, includefoot, left=3cm, right=2cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm]{geometry}
